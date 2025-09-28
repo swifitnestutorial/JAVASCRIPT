@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="sandy" data-conceptby="harsh">Hey i am a box </div>
+        <div class="box">hey i am a box</div>
+    </div>
+    <script>
+        // let div = document.createElement("div");
+        // div.innerHTML = "i hav in inserted <b>by sandy</b>"
+        // div.setAttribute("class","created");
+        // document.querySelector(".container").before(div);//.append(div)
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterbegin","<b> i am under the water . please help me here to much raining..</b>")
+
+// document.querySelector(".box").remove()
+// undefined
+// document.querySelector(".box").remove()
+// // undefine
+// ocument.querySelector(".container").classList
+// DOMTokenList(3) ['container', 'red', 'bg-green', value: 'container red bg-green']0: "container"1: "red"2: "bg-green"length: 3value: "container red bg-green"[[Prototype]]: DOMTokenListadd: ƒ add()contains: ƒ contains()entries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)remove: ƒ remove()replace: ƒ replace()supports: ƒ supports()toString: ƒ toString()toggle: ƒ toggle()value: (...)values: ƒ values()constructor: ƒ DOMTokenList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "DOMTokenList"get length: ƒ length()get value: ƒ value()set value: ƒ value()[[Prototype]]: Object
+// document.querySelector(".container").className
+// 'container red bg-green'
+// document.querySelector(".container").classList.add("sandy")
+// undefined
+// document.querySelector(".container").classList.remove("sandy")
+// undefined
+// document.querySelector(".container").classList.remove("red")
+// undefined
+// document.querySelector(".container").classList.add("red")
+// undefined
+// document.querySelector(".container").classList.toggle("red")
+// false
+// document.querySelector(".container").classList.toggle("red")
+// true
+    </script>
+</body>
+
+</html>
